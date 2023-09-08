@@ -5,10 +5,10 @@ Caso o número seja menor ou igual a zero deve mostrar a mensagem “Só é acei
 
 function mostrarDobro(num){
     if (num <= 0) {
-        return "Só é aceito números positivos maiores que zero"
+        return "Só é aceito números positivos maiores que zero!"
     } else {
         const dobro = 2 * num
-        return `O dobro do número ${num} é o número ${dobro}`
+        return `O dobro do número ${num} é o número ${dobro}.`
     }
 }
 
