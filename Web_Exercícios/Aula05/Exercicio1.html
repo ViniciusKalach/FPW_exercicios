@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Exercício CSS </title>
+    <style>
+        /* Estilos para a barra lateral */
+        .barraLateral {
+            width: 20%;
+            height: 100%;
+            background-color: #547ff5;
+            float: left;
+            color: white;
+            padding: 20px;
+        }
+
+        /* Estilos para o conteúdo principal */
+        .conteudo {
+            width: 80%;
+            height: 100%;
+            background-color: #f2f2f2;
+            float: right;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Estilo para links de navegação */
+        .barraLateral a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Estilo para os links de navegação quando hover */
+        .barraLateral a:hover {
+            background-color: #90c2e4;
+        }
+
+        /* Posicionamento absoluto da barra lateral */
+        .barraLateral {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Posicionamento absoluto do conteúdo principal */
+        .conteudo {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        /* Estilo para tornar o layout responsivo */
+        @media (max-width: 768px) {
+            .barraLateral, .conteudo {
+                width: 100%;
+                position: static;
+                float: none;
+            }
+        }
+    </style>
+</head> 
+<body>
+    <div class="barraLateral">
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </div>
+    <div class="conteudo">
+        <h1>Sejam bem-vindos ao nosso site.</h1>
+        <h3>Desenvolvido por Vinícius, 211559</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+</body>
+</html>
