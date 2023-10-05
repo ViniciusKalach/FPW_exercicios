@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Exercício 01</title>
+    <style>
+        .color-div{
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="color-div"></div>
+    <button onclick="mudarCor()"> Mude a cor. </button>
+
+    <script>
+        function mudarCor(){
+            const cores = ["blue", "yellow", "green", "reed", "purple"];
+            const div = document.querySelector(".color-div");
+            const corAleatoria = cores[Math.floor(Math.random() * cores.length)];
+            div.style.backgroundColor = corAleatoria;
+        }
+    </script>
+    
+</body>
+</html>
