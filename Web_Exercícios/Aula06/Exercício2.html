@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Exercício 2</title>
+</head>
+<body>
+    <h1>Lista de Tarefas.</h1>
+    <input type="text" id="tarefaInserida" placeholder="Insira uma tarefa...">
+    <button onclick="adicionarTarefa()">Adicionar</button>
+    <ul id="listaDeTarefas">
+    </ul>
+
+    <script>
+        function adicionarTarefa(){
+            const tarefaInserida = document.getElementById("tarefaInserida");
+            const textoTarefa  = tarefaInserida.value.trim();
+
+            if (textoTarefa !== "") {
+                const listaTarefas = document.getElementById("listaDeTarefas");
+                const novaTarefa = document.createElement("li");
+                novaTarefa.textContent = textoTarefa;
+                listaTarefas.appendChild(novaTarefa);
+                tarefaInserida.value = "";
+            }
+        }
+    </script>
+</body>
+</html>
