@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Exercício 3</title>
+</head>
+<body>
+    <h1>Contador</h1>
+    <h3>Valor atual: <span id="contador">0</span></h3>
+
+    <button id="botao">Incrementar</button>
+
+    <script>
+        const contadorElement = document.getElementById("contador");
+        const botaoIncrementar = document.getElementById("botao");
+
+        let contador = 0;
+
+        function incrementar() {
+            contador++;
+            contadorElement.textContent = contador;
+        }
+
+        botaoIncrementar.addEventListener("click", incrementar);
+    </script>
+</body>
+</html>
