@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Exercício 5</title>
+</head>
+<body>
+    <h1>Contador de Palavras</h1>
+    <textarea id="frase" rows="4" cols="50" placeholder="Digite aqui uma frase ou parágrafo..."></textarea>
+    <br>
+    <button onclick="contarPalavras()">Contar Palavras</button>
+    <br>
+    <p id="resultado">Número de palavras: 0</p>
+
+    <script>
+        function contarPalavras() {
+            const frase = document.getElementById("frase").value;
+            const palavras = frase.split(/\s+/).filter(Boolean); // Divide a frase em palavras
+
+            const resultadoElement = document.getElementById("resultado");
+            resultadoElement.textContent = `Número de palavras: ${palavras.length}`;
+        }
+    </script>
+</body>
+</html>
