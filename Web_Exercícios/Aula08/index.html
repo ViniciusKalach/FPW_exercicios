@@ -195,15 +195,19 @@
           Remember me
         </label>
       </div>
-      <button id="loginButton" class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+      <a href="../Aula08/initial.html">
+        <button id="loginButton" class="btn btn-primary w-100 py-2" type="button">Sign in</button>
+      </a>
       <p class="mt-5 mb-3 text-body-secondary">&copy; 2023</p>
     </form>
   </main>
   <script src="../Aula08/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
-    document.getElementById('loginButton').addEventListener('click', function () {
+    /*document.getElementById('loginButton').addEventListener('click', function () {
+      window.location.href = 'http://127.0.0.1:5501/Web_Exerc%C3%ADcios/Aula08/initial.html';
       console.log('Clique no botão de login');
+
       var email = document.getElementById('floatingInput').value;
       if (isValidEmail(email)) {
         console.log('Email valido');
@@ -217,7 +221,7 @@
     function isValidEmail(email) {
       var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
       return emailPattern.test(email);
-    }
+    }*/
   </script>
 
 </body>
