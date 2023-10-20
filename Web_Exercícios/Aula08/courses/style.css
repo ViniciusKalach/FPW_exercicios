@@ -1,0 +1,36 @@
+#navbar-logo {
+    width: 12%;
+  }
+  
+  #logo-img {
+    background-color: #fff;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
+  }
+  
+  .btn-primary {
+    background-color: #429b27;
+    border-color: #429b27;
+    margin-bottom: 15px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #429b27;
+    border-color: #429b27;
+  }
+  
+  #course-card {
+    background-size: auto 105%;
+    background-position: center;
+  }
+  
+  #course-card h2 {
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+  }
+  
+  #course-card p,
+  small {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    padding: 5px;
+  }

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cursos - La Cucina</title>
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom">Cursos disponíveis</h2>
+
+      <!-- Logo -->
+      <a href="../carousel/initial.html"
+        ><img id="navbar-logo" src="../node_modules/bootstrap/brand/mammamia.gif" alt="JCoffee"
+      /></a>
+
+      <!-- Cards -->
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div
+            id="course-card"
+            class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            style="background-image: url('../node_modules/bootstrap/brand/charcutaria.webp')"
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+            >
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Charcutaria Italiana</h2>
+              <p>
+                <b>Charcutaria Italiana - Sabor e Tradição</b>Neste curso, desvende os segredos da criação de presuntos curados, 
+                salsichas e outros tesouros da culinária italiana. Explore as tradições 
+                ricas que deram origem a essas iguarias e aperfeiçoe as técnicas de cura 
+                que fazem da charcutaria italiana uma verdadeira obra de arte gastronômica. <b>(12h)</b>
+              </p>
+
+              <button
+                class="btn btn-lg btn-primary"
+                onclick="clickBuy('Charcutaria Italiana')"
+              >
+                Comprar agora
+              </button>
+
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    id="logo-img"
+                    src="../node_modules/bootstrap/brand/italianflag.webp"
+                    alt="Bootstrap"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white"
+                  />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>12h</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>R$ 300,00</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div
+            id="course-card"
+            class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            style="background-image: url('../node_modules/bootstrap/brand/doceitalianos.jpg')"
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+            >
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                Dolci d'Italia
+              </h2>
+              <p>
+                <b>Dolci d'Italia - Doçura Italiana em Cada Mordida. </b> As Sobremesas Italianas Clássicas 
+                são uma celebração da doçura e da paixão italiana. Neste curso, você aprenderá a criar obras-primas 
+                como tiramisù, cannoli, panna cotta e muito mais. Deleite-se com os sabores e aromas da Itália 
+                enquanto se aventura na criação dessas delícias  doces que encantam paladares em todo o mundo. <b>(25h)</b>
+              </p>
+
+              <button
+                class="btn btn-lg btn-primary"
+                onclick="clickBuy('Doçura Italiana em Cada Mordida')"
+              >
+                Comprar agora
+              </button>
+
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    id="logo-img"
+                    src="../node_modules/bootstrap/brand/italianflag.webp"
+                    alt="Bootstrap"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white"
+                  />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>10h</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>R$200,00</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div
+            id="course-card"
+            class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            style="background-image: url('../node_modules/bootstrap/brand/calabria.webp')"
+          >
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Calábria na Panela</h2>
+              <p>
+                <b>Calábria na Panela - Sabores Picantes da Itália. </b> Explore a autenticidade 
+                da Culinária de Calábria e descubra os sabores intensos e picantes que tornam essa 
+                região única. Neste curso, você será levado a uma jornada culinária pela Calábria, 
+                aprendendo a preparar pratos tradicionais cheios de personalidade. Da 'Nduja ao 
+                peperoncino, sinta o calor da Calábria em cada refeição que você criar.<b>(08h)</b> 
+              </p>
+
+              <button
+                class="btn btn-lg btn-primary"
+                onclick="clickBuy('Calábria na Panela')"
+              >
+                Comprar agora
+              </button>
+
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    id="logo-img"
+                    src="../node_modules/bootstrap/brand/italianflag.webp"
+                    alt="Bootstrap"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white"
+                  />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>08h</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>R$150,00</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../JS/script.js"></script>
+  </body>
+</html>
